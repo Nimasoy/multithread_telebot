@@ -1,4 +1,4 @@
-## Skip 1 and 2 if you already have pycharm
+Skip 1 and 2 if you already have pycharm
 
 1. Go to python folder if you haven't used python or executed any python code in your system before
 
