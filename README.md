@@ -10,7 +10,7 @@ Skip 1 and 2 if you already have pycharm
 
 5. Go to openai to generate an API key
 
-6. The project code is in bot_database folder
+6. The project code is in main.py
 
 	 Open the main code
 
