@@ -7,8 +7,13 @@ from telegram import Update
 from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
 from openai import OpenAI
 
-TELEGRAM_BOT_TOKEN = "6940641743:AAGq4r5e5Ox163Yll6_bvwFTmtf9FFxTaDU"
-OPENAI_API_KEY = "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"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "YOUR_OPENAI_API_KEY_HERE")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 

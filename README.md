@@ -1,36 +1,37 @@
-Skip 1 and 2 if you already have pycharm
+# Multithreaded Telegram Bot 🤖⚡
 
-1. Go to python folder if you haven't used python or executed any python code in your system before
+An asynchronous and multithreaded Telegram chatbot powered by OpenAI, featuring live SQLite storage and a Tkinter GUI monitoring dashboard.
 
-2. Go to pycharm folder to install pycharm
+## 🚀 Features
+- **Concurrent Processing:** Background worker threads process long-running tasks and concurrent counting without blocking user messaging.
+- **OpenAI Integration:** Direct response generation using ChatGPT completions.
+- **Database Telemetry:** Logs conversations, inputs, and background responses in SQLite.
+- **Desktop GUI:** Built-in Tkinter interface for live monitoring.
 
-3. Go to libraries folder to install the essential libraries
+## 📦 Setup & Installation
 
-4. Go to bot to create a telegram bot using BotFather to get the bot token
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Nimasoy/multithread_telebot.git
+   cd multithread_telebot
+   ```
 
-5. Go to openai to generate an API key
+2. **Configure Environment Variables:**
+   Copy the example environment configuration:
+   ```bash
+   cp .env.example .env
+   ```
+   Add your API keys to `.env`:
+   ```env
+   TELEGRAM_BOT_TOKEN="your_bot_father_token"
+   OPENAI_API_KEY="your_openai_api_key"
+   ```
 
-6. The project code is in main.py
+3. **Install Dependencies & Run:**
+   ```bash
+   pip install -r requirements.txt
+   python main.py
+   ```
 
-	 Open the main code
-
-	 In the first lines of the code you can see my TELEGRAM_BOT_TOKEN and OPENAI_API_KEY
-
-	 Replace them with your own generated API key and bot token
-
-7. In your telegram search for the username of your created bot and start it
-
-8. Run the main code
-
-9. Type your desired inputs into the telegram bot for testing
-	 test for text:
-   		 type in any text
-   		 you can see that it outputs the result from chatgpt 
-	 test for concurrent counting:
-   		 type in 10 for example
-   		 after one or two countings type in 5 for example
-   		 you can see that it continues counting 10 and has started counting 5 concurrently 
-
-10. You can see that the messages and the responses are saved into a database and pop up in the gui window
-
-Good luck!
+## 📄 License
+This project is open-source under the [MIT License](LICENSE).
